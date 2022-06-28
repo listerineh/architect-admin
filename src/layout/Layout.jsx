@@ -26,6 +26,10 @@ const Layout = () => {
             to='/providers' 
             className={`${currentURL === '/providers' ? 'text-indigo-300' : 'text-white'}  text-2xl block mt-2 hover:text-indigo-200`}
           >Proveedores</Link>
+          <Link 
+            to='/equipment' 
+            className={`${currentURL === '/equipment' ? 'text-indigo-300' : 'text-white'}  text-2xl block mt-2 hover:text-indigo-200`}
+          >Equipos</Link>
         </nav>
       </div>
       <div className='md:w-3/4 p-10 md:h-screen md:overflow-scroll'>

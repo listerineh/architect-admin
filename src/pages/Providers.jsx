@@ -44,24 +44,15 @@ const Providers = () => {
       <h1 className="font-black text-4xl text-indigo-900">Proveedores</h1>
       <p className="mt-3 text-indigo-400 font-semibold">Administra facilmente tus proveedores!</p>
 
-      <table className="w-full mt-5 table-auto shadow bg-white">
-        <thead className="bg-indigo-900 text-white">
-          <tr>
-            <th className="p-5">Nombre</th>
-            <th className="p-5">Acciones</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          {providers.map((provider) => (
-            <Provider
-              key={provider.id}
-              provider={provider}
-              handleDelete={handleDelete}
-            />
-          ))}
-        </tbody>
-      </table>
+      <div className="w-full">
+        {providers.map((provider) => (
+          <Provider
+            key={provider.id}
+            provider={provider}
+            handleDelete={handleDelete}
+          />
+        ))}
+      </div>
     </>
   )
 }

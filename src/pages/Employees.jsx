@@ -43,25 +43,15 @@ const Employees = () => {
       <h1 className="font-black text-4xl text-indigo-900">Empleados</h1>
       <p className="mt-3 text-indigo-400 font-semibold">Administra facilmente tus empleados!</p>
 
-      <table className="w-full mt-5 table-auto shadow bg-white">
-        <thead className="bg-indigo-900 text-white rounded-md">
-          <tr>
-            <th className="p-5">Nombre</th>
-            <th className="p-5">Posicion</th>
-            <th className="p-5">Acciones</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          {employees.map((employee) => (
-            <Employee
-              key={employee.id}
-              employee={employee}
-              handleDelete={handleDelete}
-            />
-          ))}
-        </tbody>
-      </table>
+      <div className="w-full">
+        {employees.map((employee) => (
+          <Employee
+            key={employee.id}
+            employee={employee}
+            handleDelete={handleDelete}
+          />
+        ))}
+      </div>
     </>
   );
 };

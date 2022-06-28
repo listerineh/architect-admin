@@ -3,27 +3,27 @@
     {
       "id": 1,
       "name": "Freddy",
-      "position": "master"
+      "position": "maestro"
     },
     {
       "id": 2,
       "name": "Jonathan",
-      "position": "master"
+      "position": "maestro"
     },
     {
       "id": 3,
       "name": "Don Juma",
-      "position": "master"
+      "position": "maestro"
     },
     {
       "id": 4,
       "name": "Josue",
-      "position": "officer"
+      "position": "oficial"
     },
     {
       "id": 5,
       "name": "Miguelito",
-      "position": "officer"
+      "position": "oficial"
     }
   ],
   "providers": 
@@ -74,7 +74,7 @@
   [
     {
       "id": 1,
-      "tool": "Amoladora",
+      "name": "Amoladora",
       "brand": "DeWalt",
       "model": "DWE4557-B3",
       "serie": "253138",
@@ -82,7 +82,7 @@
     },
     {
       "id": 2,
-      "tool": "Amoladora",
+      "name": "Amoladora",
       "brand": "DeWalt",
       "model": "DWE4577-B3",
       "serie": "31926",
@@ -90,7 +90,7 @@
     },
     {
       "id": 3,
-      "tool": "Taladro",
+      "name": "Taladro",
       "brand": "DeWalt",
       "model": "DWD520",
       "serie": "DGP3HC",
@@ -98,7 +98,7 @@
     },
     {
       "id": 4,
-      "tool": "Taladro",
+      "name": "Taladro",
       "brand": "Makita",
       "model": "HP20",
       "serie": "205020",
@@ -106,7 +106,7 @@
     },
     {
       "id": 5,
-      "tool": "Sierra Circular",
+      "name": "Sierra Circular",
       "brand": "INGCO",
       "model": "UCS18528",
       "serie": "20090760510",
