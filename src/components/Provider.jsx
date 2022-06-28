@@ -18,7 +18,7 @@ const Provider = ({ provider, handleDelete}) => {
             className="py-2 lg:px-20 px-10 bg-yellow-600 hover:bg-yellow-700 text-white font-bold uppercase rounded-lg cursor-pointer transition-all"
             onClick={() => navigate(`/provider/edit/${id}`) }
           >
-            Edit
+            Editar
           </button>
   
           <button
@@ -26,7 +26,7 @@ const Provider = ({ provider, handleDelete}) => {
             className="py-2 lg:px-20 px-10 bg-red-600 hover:bg-red-700 text-white font-bold uppercase rounded-lg cursor-pointer transition-all"
             onClick={handleDelete}
           >
-            Delete
+            Eliminar
           </button>
         </div>
       </div>
