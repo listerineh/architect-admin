@@ -10,11 +10,18 @@ const Layout = () => {
       <div className='md:w-1/4 bg-gray-900 px-5 py-10'>
         <Link 
           to='' 
-          className='text-5xl md:text-2xl lg:text-3xl font-black text-indigo-300 hover:text-indigo-400'
+          className='text-5xl md:text-2xl font-black text-indigo-300 hover:text-indigo-400'
         >
-          <img 
-            src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-architecture-3d-printing-flaticons-lineal-color-flat-icons.png"
-          />
+          <div className='flow-root'>
+            <div className='float-left'>
+              <img 
+                src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-architecture-3d-printing-flaticons-lineal-color-flat-icons.png"
+              />
+            </div>
+            <div className="float-right">
+              <h1 className='md:text-2xl text-xl mt-5'>Administración</h1>
+            </div>
+          </div>
         </Link>
         
         <nav className='mt-10'>
