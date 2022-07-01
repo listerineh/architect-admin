@@ -54,10 +54,10 @@ const Providers = () => {
         <div className="mt-3 md:float-right">
           <button
             type="button"
-            className="bg-green-800 py-2 lg:px-10 px-2 md:w-auto w-full text-center rounded-lg shadow text-white font-bold uppercase hover:bg-green-900 transition-all"
+            className="bg-green-800 py-2 lg:px-10 px-2 md:w-auto w-full text-sm text-center rounded-lg shadow text-white font-bold uppercase hover:bg-green-900 transition-all"
             onClick={() => navigate("/providers/new")}
           >
-            New
+            Nuevo
           </button>
         </div>
       </div>

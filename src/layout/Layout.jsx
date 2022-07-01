@@ -18,8 +18,8 @@ const Layout = () => {
                 src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-architecture-3d-printing-flaticons-lineal-color-flat-icons.png"
               />
             </div>
-            <div className="float-right">
-              <h1 className='md:text-2xl text-xl mt-5'>Administración</h1>
+            <div className="float-left">
+              <h1 className='md:text-2xl text-xl mt-5 ml-10'>Inicio</h1>
             </div>
           </div>
         </Link>
