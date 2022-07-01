@@ -24,7 +24,7 @@ const Provider = ({ provider, handleDelete}) => {
         <button
           type="button"
           className="py-2 md:mb-0 mb-2 md:w-auto w-full lg:px-20 px-10 bg-red-600 hover:bg-red-700 text-white font-bold uppercase rounded-lg cursor-pointer transition-all"
-          onClick={handleDelete}
+          onClick={() => handleDelete(id, name)}
         >
           Eliminar
         </button>
