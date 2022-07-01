@@ -5,7 +5,7 @@ const Tool = ({ tool, handleDelete }) => {
   const { id, name, brand, model, serie, cantity } = tool;
 
   return (
-    <div className="my-5 bg-white shadow-md px-5 py-10 rounded-xl">
+    <div className="my-5 bg-white shadow-md px-5 py-10 rounded-xl md:text-sm text-xs">
       <p className="font-bold mb-3 text-gray-700 uppercase">
         Herramienta: {""}
         <span className="font-normal normal-case">{name}</span>

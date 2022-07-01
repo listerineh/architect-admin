@@ -3,27 +3,37 @@
     {
       "id": 1,
       "name": "Freddy",
-      "position": "maestro"
+      "position": "maestro",
+      "phone": "0987754621",
+      "email": "freddy@gmail.com"
     },
     {
       "id": 2,
       "name": "Jonathan",
-      "position": "maestro"
+      "position": "maestro",
+      "phone": "0987754621",
+      "email": "jhonathan@gmail.com"
     },
     {
       "id": 3,
       "name": "Don Juma",
-      "position": "maestro"
+      "position": "maestro",
+      "phone": "0987754621",
+      "email": "donjuma@gmail.com"
     },
     {
       "id": 4,
       "name": "Josue",
-      "position": "oficial"
+      "position": "oficial",
+      "phone": "0987754621",
+      "email": "josue@gmail.com"
     },
     {
       "id": 5,
       "name": "Miguelito",
-      "position": "oficial"
+      "position": "oficial",
+      "phone": "0987754621",
+      "email": "miguelito@gmail.com"
     }
   ],
   "providers": 
