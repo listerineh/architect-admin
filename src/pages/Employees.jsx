@@ -21,8 +21,8 @@ const Employees = () => {
     getEmployeesFromAPI();
   }, []);
 
-  const handleDelete = async (id) => {
-    const response = confirm("Esta seguro de eliminar el empleado?");
+  const handleDelete = async (id, name) => {
+    const response = confirm(`Esta seguro de eliminar al empleado ${name}?`);
 
     if (response) {
       try {
