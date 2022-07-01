@@ -31,10 +31,10 @@ const Tool = ({ tool, handleDelete }) => {
         <span className="font-normal normal-case">{cantity}</span>
       </p>
 
-      <div className="flex justify-between mt-10 ">
+      <div className="md:flex justify-between mt-10">
         <button
           type="button"
-          className="py-2 lg:px-20 px-10 bg-yellow-600 hover:bg-yellow-700 text-white font-bold uppercase rounded-lg cursor-pointer transition-all"
+          className="py-2 md:mb-0 mb-2 md:w-auto w-full lg:px-20 px-10 bg-yellow-600 hover:bg-yellow-700 text-white font-bold uppercase rounded-lg cursor-pointer transition-all"
           onClick={() => navigate(`/equipment/edit/${id}`) }
         >
           Editar
@@ -42,7 +42,7 @@ const Tool = ({ tool, handleDelete }) => {
 
         <button
           type="button"
-          className="py-2 lg:px-20 px-10 bg-red-600 hover:bg-red-700 text-white font-bold uppercase rounded-lg cursor-pointer transition-all"
+          className="py-2 md:mb-0 mb-2 md:w-auto w-full lg:px-20 px-10 bg-red-600 hover:bg-red-700 text-white font-bold uppercase rounded-lg cursor-pointer transition-all"
           onClick={handleDelete}
         >
           Eliminar
