@@ -10,34 +10,54 @@ const Layout = () => {
       <div className='md:w-1/4 bg-gray-900 px-5 py-10'>
         <Link 
           to='' 
-          className='text-5xl md:text-2xl font-black text-indigo-300 hover:text-indigo-400'
+          className='text-5xl font-black text-indigo-300 hover:text-indigo-400'
         >
-          <div className='flow-root'>
-            <div className='float-left'>
-              <img 
-                src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-architecture-3d-printing-flaticons-lineal-color-flat-icons.png"
-              />
-            </div>
-            <div className="float-left">
-              <h1 className='md:text-2xl text-xl mt-5 ml-10'>Inicio</h1>
-            </div>
-          </div>
+          <h1 className='text-5xl pl-2'>Inicio</h1>
         </Link>
+
+        <div className='bg-white h-0.5 mt-10'></div>
         
-        <nav className='mt-10'>
+        <nav className='mt-10 pl-2'>
           <Link 
             to='/employees' 
-            className={`${currentURL === '/employees' ? 'text-indigo-300' : 'text-white'}  text-2xl block mt-2 hover:text-indigo-200`}
+            className={`${currentURL === '/employees' ? 'text-indigo-300 font-bold' : 'text-white'}  text-xl block mt-2 hover:text-indigo-200`}
           >Empleados</Link>
           <Link 
             to='/providers' 
-            className={`${currentURL === '/providers' ? 'text-indigo-300' : 'text-white'}  text-2xl block mt-2 hover:text-indigo-200`}
+            className={`${currentURL === '/providers' ? 'text-indigo-300 font-bold' : 'text-white'}  text-xl block mt-2 hover:text-indigo-200`}
           >Proveedores</Link>
           <Link 
             to='/equipment' 
-            className={`${currentURL === '/equipment' ? 'text-indigo-300' : 'text-white'}  text-2xl block mt-2 hover:text-indigo-200`}
+            className={`${currentURL === '/equipment' ? 'text-indigo-300 font-bold' : 'text-white'}  text-xl block mt-2 hover:text-indigo-200`}
           >Equipos</Link>
         </nav>
+
+        <div className='bg-white h-0.5 mt-10'></div>
+
+        <nav className='mt-10 pl-2'>
+          <Link 
+            to='/workflow' 
+            className={`${currentURL === '/workflow' ? 'text-indigo-300 font-bold' : 'text-white'}  text-xl block mt-2 hover:text-indigo-200`}
+          >Flujo de trabajo</Link>
+          <Link 
+            to='/rentals' 
+            className={`${currentURL === '/rentals' ? 'text-indigo-300 font-bold' : 'text-white'}  text-xl block mt-2 hover:text-indigo-200`}
+          >Alquileres</Link>
+          <Link 
+            to='/shopping' 
+            className={`${currentURL === '/shopping' ? 'text-indigo-300 font-bold' : 'text-white'}  text-xl block mt-2 hover:text-indigo-200`}
+          >Materiales</Link>
+        </nav>
+
+        <div className='bg-white h-0.5 mt-10'></div>
+
+        <nav className='mt-10 pl-2'>
+          <Link 
+            to='/reports' 
+            className={`${currentURL === '/reports' ? 'text-indigo-300 font-bold' : 'text-white'}  text-xl block mt-2 hover:text-indigo-200`}
+          >Reportes</Link>
+        </nav>
+
       </div>
       <div className='md:w-3/4 p-10 md:h-screen md:overflow-scroll'>
         <Outlet />
