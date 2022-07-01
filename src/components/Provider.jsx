@@ -3,13 +3,23 @@ import { useNavigate } from 'react-router-dom'
 const Provider = ({ provider, handleDelete}) => {
 
     const navigate = useNavigate()
-    const {id, name} = provider
+    const {id, name, phone, address} = provider
   
     return (
       <div className="my-5 bg-white shadow-md px-5 py-10 rounded-xl md:text-sm text-xs">
         <p className="font-bold mb-3 text-gray-700 uppercase">
           Nombre: {""}
           <span className="font-normal normal-case">{name}</span>
+        </p>
+
+        <p className="font-bold mb-3 text-gray-700 uppercase">
+          Teléfono: {""}
+          <span className="font-normal normal-case">{phone}</span>
+        </p>
+
+        <p className="font-bold mb-3 text-gray-700 uppercase">
+          Dirección: {""}
+          <span className="font-normal normal-case">{address}</span>
         </p>
   
         <div className="md:flex justify-between mt-10">

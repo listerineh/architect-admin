@@ -40,19 +40,27 @@
   [
     {
       "id": 1,
-      "name": "Propio"
+      "name": "Propio",
+      "phone": "0987754621",
+      "address": "San Francisco, CA 94513"
     },
     {
       "id": 2,
-      "name": "Encofrados Interoceanica"
+      "name": "Encofrados Interoceanica",
+      "phone": "0987754621",
+      "address": "San Francisco, CA 94513"
     },
     {
       "id": 3,
-      "name": "Maestro Galo"
+      "name": "Maestro Galo",
+      "phone": "0987754621",
+      "address": "San Francisco, CA 94513"
     },
     {
       "id": 4,
-      "name": "SEDIMAC"
+      "name": "SEDIMAC",
+      "phone": "0987754621",
+      "address": "San Francisco, CA 94513"
     }
   ],
   "workflow": 
