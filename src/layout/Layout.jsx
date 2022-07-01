@@ -1,4 +1,5 @@
 import { Outlet, Link, useLocation } from 'react-router-dom'
+import Logo from "../images/arquitecto.webp"
 
 const Layout = () => {
 
@@ -12,7 +13,14 @@ const Layout = () => {
           to='' 
           className='text-5xl font-black text-indigo-300 hover:text-indigo-400'
         >
-          <h1 className='text-5xl pl-2'>Inicio</h1>
+          <div className='flex'>
+            <img 
+              src={Logo} 
+              alt='Web page Logo'
+              className='w-12 h-12'
+            />
+            <h1 className='text-5xl pl-2'>Inicio</h1>
+          </div>
         </Link>
 
         <div className='bg-white h-0.5 mt-10'></div>
