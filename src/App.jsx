@@ -1,44 +1,37 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Layout from './layout/Layout'
+import Home from './pages/Home'
+import Employees from './pages/Employees'
+import NewEmployeeForm from './pages/NewEmployeeForm'
+import EditEmployeeForm from './pages/EditEmployeeForm'
+import Providers from './pages/Providers'
+import NewProviderForm from './pages/NewProviderForm'
+import EditProviderForm from './pages/EditProviderForm'
+import Equipment from './pages/Equipment'
+import NewEquipmentForm from './pages/NewEquipmentForm'
+import EditEquipmentForm from './pages/EditEquipmentForm'
+import Error404 from './pages/Error404'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.jsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='' element={<Layout />} >
+          <Route index element={<Home />} />
+          <Route path='employees' element={<Employees />} />
+          <Route path='employees/new' element={<NewEmployeeForm />} />
+          <Route path='employees/edit/:id' element={<EditEmployeeForm />} />
+          <Route path='providers' element={<Providers />} />
+          <Route path='providers/new' element={<NewProviderForm />} />
+          <Route path='providers/edit/:id' element={<EditProviderForm />} />
+          <Route path='equipment' element={<Equipment />} />
+          <Route path='equipment/new' element={<NewEquipmentForm />} />
+          <Route path='equipment/edit/:id' element={<EditEquipmentForm />} />
+        </Route>
+        <Route path='*' element={<Error404 />}/>
+      </Routes>
+    </BrowserRouter>
   )
 }
 

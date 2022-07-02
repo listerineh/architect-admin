@@ -1,0 +1,214 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Freddy",
+      "position": "maestro",
+      "phone": "0987754621",
+      "email": "freddy@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Jonathan",
+      "position": "maestro",
+      "phone": "0987754621",
+      "email": "jhonathan@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "Don Juma",
+      "position": "maestro",
+      "phone": "0987754621",
+      "email": "donjuma@gmail.com"
+    },
+    {
+      "id": 4,
+      "name": "Josue",
+      "position": "oficial",
+      "phone": "0987754621",
+      "email": "josue@gmail.com"
+    },
+    {
+      "id": 5,
+      "name": "Miguelito",
+      "position": "oficial",
+      "phone": "0987754621",
+      "email": "miguelito@gmail.com"
+    }
+  ],
+  "providers": 
+  [
+    {
+      "id": 1,
+      "name": "Propio",
+      "phone": "0987754621",
+      "address": "San Francisco, CA 94513"
+    },
+    {
+      "id": 2,
+      "name": "Encofrados Interoceanica",
+      "phone": "0987754621",
+      "address": "San Francisco, CA 94513"
+    },
+    {
+      "id": 3,
+      "name": "Maestro Galo",
+      "phone": "0987754621",
+      "address": "San Francisco, CA 94513"
+    },
+    {
+      "id": 4,
+      "name": "SEDIMAC",
+      "phone": "0987754621",
+      "address": "San Francisco, CA 94513"
+    }
+  ],
+  "workflow": 
+  [
+    {
+      "id": 1,
+      "startDate":"2022-06-27",
+      "endDate":"2022-06-27",
+      "description": "Tratado de perfiles C",
+      "masters": [1, 2],
+      "officers": [],
+      "duration": 8,
+      "cantity": 110,
+      "observations": "Se espera que hoy se termine el trabajo, o si no para mañana martes 28 de junio en la mañana."
+    },
+    {
+      "id": 2,
+      "startDate":"2022-06-27",
+      "endDate":"2022-06-27",
+      "description": "Instalación de triplex",
+      "masters": [1, 2, 3],
+      "officers": [],
+      "duration": 8,
+      "cantity": 15.5,
+      "observations": "Se espera que hoy se termine el trabajo. Se está anclando el triplex a las vigas y fijando a la estructura de metal."
+    }
+  ],
+  "equipment": 
+  [
+    {
+      "id": 1,
+      "name": "Amoladora",
+      "brand": "DeWalt",
+      "model": "DWE4557-B3",
+      "serie": "253138",
+      "cantity": 10
+    },
+    {
+      "id": 2,
+      "name": "Amoladora",
+      "brand": "DeWalt",
+      "model": "DWE4577-B3",
+      "serie": "31926",
+      "cantity": 10
+    },
+    {
+      "id": 3,
+      "name": "Taladro",
+      "brand": "DeWalt",
+      "model": "DWD520",
+      "serie": "DGP3HC",
+      "cantity": 10
+    },
+    {
+      "id": 4,
+      "name": "Taladro",
+      "brand": "Makita",
+      "model": "HP20",
+      "serie": "205020",
+      "cantity": 10
+    },
+    {
+      "id": 5,
+      "name": "Sierra Circular",
+      "brand": "INGCO",
+      "model": "UCS18528",
+      "serie": "20090760510",
+      "cantity": 10
+    }
+  ],
+  "site":
+  [
+    {
+      "id": 1,
+      "name": "Casa Jardin",
+      "equipment": [1, 2, 3, 4, 5],
+      "date": "2022-06-27",
+      "observations": "Template"
+    }
+  ],
+  "personal":
+  [
+    {
+      "id": 1,
+      "date": "2022-06-24",
+      "masters": [1, 2, 3],
+      "officers": [4, 5],
+      "Observations": "Por el paro, Freddy y Jonathan no alcanzaron a venir temprano el día lunes"
+    }
+  ],
+  "rentals":
+  [
+    {
+      "id": 1,
+      "date": "2022-06-24",
+      "equipment": [1],
+      "provider": 1,
+      "cantity": 7,
+      "days": 3,
+      "observations": "Template"
+    },
+    {
+      "id": 1,
+      "date": "2022-06-24",
+      "equipment": "Puntales",
+      "provider": 2,
+      "cantity": 12,
+      "days": 4,
+      "observations": "Template"
+    },
+    {
+      "id": 1,
+      "date": "2022-06-24",
+      "equipment": "Rotomartillo",
+      "provider": 3,
+      "cantity": 2,
+      "days": 4,
+      "observations": "Template"
+    }
+  ],
+  "shopping":
+  [
+    {
+      "id": 1,
+      "date": "2022-06-27",
+      "description": "Sacos de cemento de 50 kg",
+      "provider": 4,
+      "cantity": 20,
+      "unitCost": 7.54,
+      "observations": "Cemento para las columnas del cerramiento lateral"
+    },
+    {
+      "id": 2,
+      "date": "2022-06-27",
+      "description": "Arena azul",
+      "provider": 4,
+      "cantity": 8,
+      "unitCost": 13.75,
+      "observations": "Arena azul para las columnas del cerramiento lateral"
+    },
+    {
+      "id": 3,
+      "date": "2022-06-27",
+      "description": "Ripio",
+      "provider": 4,
+      "cantity": 8,
+      "unitCost": 13.75,
+      "observations": "Ripio para las columnas del cerramiento lateral"
+    }
+  ]
+}
