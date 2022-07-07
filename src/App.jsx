@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Layout from './layout/Layout'
 import Home from './pages/Home'
@@ -14,10 +15,34 @@ import Error404 from './pages/Error404'
 
 function App() {
 
+  const [theme, setTheme] = useState(null);
+
+  useEffect(() => {
+    if(window.matchMedia('(prefers-color-scheme: dark)').matches){
+      setTheme('dark');
+    }
+    else {
+      setTheme('light');
+    }
+  }, [])
+
+  useEffect(() => {
+    if(theme === 'dark'){
+      document.documentElement.classList.add('dark');
+    }
+    else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, [theme])
+
+  const handleThemeSwitch = () => {
+    setTheme(theme === 'dark' ? 'light' : 'dark');
+  }
+
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='' element={<Layout />} >
+        <Route path='' element={<Layout theme={theme} handleThemeSwitch={handleThemeSwitch}/>} >
           <Route index element={<Home />} />
           <Route path='employees' element={<Employees />} />
           <Route path='employees/new' element={<NewEmployeeForm />} />

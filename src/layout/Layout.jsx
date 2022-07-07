@@ -1,19 +1,28 @@
 import { Outlet, Link, useLocation } from "react-router-dom";
 import { Disclosure } from "@headlessui/react";
-import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import { MenuIcon, XIcon, MoonIcon, SunIcon } from "@heroicons/react/outline";
 import Logo from "../images/arquitecto.webp";
 
-const Layout = () => {
+const Layout = ({theme, handleThemeSwitch}) => {
   const location = useLocation();
   const currentURL = location.pathname;
 
   return (
-    <Disclosure as="nav" className="sticky top-0 z-50">
+    <Disclosure as="nav">
       {({ open }) => (
         <>
-          <div className="md:flex md:min-h-screen">
+          <div className="md:flex md:min-h-screen md:max-h-screen">
             <div className="md:w-1/4 bg-gray-900 px-5 sm:py-10 py-5">
               <div className="flow-root">
+                <div className="float-right block">
+                  <button
+                    type="button"
+                    onClick={handleThemeSwitch}
+                    className="p-2 md:mt-2 text-white text-lg"
+                  >
+                    {theme === 'light' ? <SunIcon className="block h-6 w-6" aria-hidden="true" /> : <MoonIcon className="block h-6 w-6" aria-hidden="true" />}
+                  </button>
+                </div>
                 <div className="sm:float-left float-right">
                   <Link
                     to=""
@@ -159,7 +168,7 @@ const Layout = () => {
                 </Link>
               </nav>
             </div>
-            <div className="md:w-3/4 p-10 md:h-screen md:overflow-scroll">
+            <div className="md:w-3/4 p-10 md:h-screen md:overflow-y-scroll dark:bg-black transition-all">
               <Outlet />
             </div>
           </div>

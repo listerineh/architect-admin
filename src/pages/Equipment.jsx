@@ -44,8 +44,8 @@ const Equipment = () => {
     <>
       <div className="md:flow-root">
         <div className="md:float-left">
-          <h1 className="font-black text-4xl text-indigo-900">Equipos</h1>
-          <p className="mt-3 text-indigo-400 font-semibold">
+          <h1 className="font-black text-4xl text-indigo-900 dark:text-indigo-400">Equipos</h1>
+          <p className="mt-3 text-indigo-400 dark:text-indigo-800 font-semibold">
             Administra facilmente tus herramientas!
           </p>
         </div>
