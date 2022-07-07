@@ -1,44 +1,48 @@
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
+import { UserIcon, PhoneIcon } from "@heroicons/react/outline";
 
 const Employee = ({ employee, handleDelete }) => {
-
-  const navigate = useNavigate()
-  const {id, name, position, phone, email} = employee
+  const navigate = useNavigate();
+  const { id, name, lastName, position, phone, homephone } = employee;
 
   return (
-    <div className="my-5 bg-white dark:bg-gray-900 shadow-md px-5 py-10 rounded-xl md:text-sm text-xs text-gray-700 dark:text-white">
-      <p className="font-bold mb-3  uppercase">
-        Nombre: {""}
-        <span className="font-normal normal-case">{name}</span>
-      </p>
+    <div className="my-5 bg-white dark:bg-gray-900 shadow-md px-5 py-8 rounded-xl text-gray-700 dark:text-white">
+      <div className="flex">
+        <UserIcon className="block md:h-7 h-5 md:w-7 w-5 mr-2 mt-1" aria-hidden="true" />
+        <p className="font-bold uppercase md:text-2xl text-lg">
+          {name} {lastName}{" "}
+          {employee.nickname && (
+            <span className="italic font-normal">({employee.nickname})</span>
+          )}
+        </p>
+      </div>
 
-      <p className="font-bold mb-3 uppercase">
-        Posición: {""}
-        <span className="font-normal capitalize">{position}</span>
-      </p>
+      <div className="md:ml-9 ml-7 md:text-sm text-xs">
+        <p className="uppercase text-indigo-600 italic mb-2">{position}</p>
+        <div className="font-extralight italic">
+          <div className="flex">
+            <PhoneIcon className="mr-2 block h-4 w-4" aria-hidden="true" />
+            <p>{phone}</p>
+          </div>
+          <div className="flex">
+            <PhoneIcon className="mr-2 block h-4 w-4" aria-hidden="true" />
+            <p>{homephone}</p>
+          </div>
+        </div>
+      </div>
 
-      <p className="font-bold mb-3 uppercase">
-        Teléfono: {""}
-        <span className="font-normal">{phone}</span>
-      </p>
-
-      <p className="font-bold mb-3 uppercase">
-        Email: {""}
-        <span className="font-normal normal-case">{email}</span>
-      </p>
-
-      <div className="md:flex justify-between mt-10">
+      <div className="md:flex justify-between mt-5">
         <button
           type="button"
           className="py-2 md:mb-0 mb-2 md:w-auto w-full lg:px-20 px-10 bg-yellow-600 hover:bg-yellow-700 text-white font-bold uppercase rounded-lg cursor-pointer transition-all"
-          onClick={() => navigate(`/employees/edit/${id}`) }
+          onClick={() => navigate(`/employees/edit/${id}`)}
         >
           Editar
         </button>
 
         <button
           type="button"
-          className="py-2 md:mb-0 mb-2 md:w-auto w-full lg:px-20 px-10 bg-red-600 hover:bg-red-700 text-white font-bold uppercase rounded-lg cursor-pointer transition-all"
+          className="py-2 md:w-auto w-full lg:px-20 px-10 bg-red-600 hover:bg-red-700 text-white font-bold uppercase rounded-lg cursor-pointer transition-all"
           onClick={() => handleDelete(id, name)}
         >
           Eliminar

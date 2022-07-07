@@ -1,46 +1,53 @@
 {
   "employees": [
     {
-      "id": 1,
+      "id": "1726453918",
       "name": "Freddy",
+      "lastName": "Velasquez",
       "position": "maestro",
       "phone": "0987754621",
-      "email": "freddy@gmail.com"
+      "homephone": "3516498"
     },
     {
-      "id": 2,
+      "id": "1045928171",
       "name": "Jonathan",
+      "lastName": "Montufar",
       "position": "maestro",
       "phone": "0987754621",
-      "email": "jhonathan@gmail.com"
+      "homephone": "3516498"
     },
     {
-      "id": 3,
-      "name": "Don Juma",
+      "id": "1749623512",
+      "name": "Juan",
+      "lastName": "Juma",
+      "nickname": "Don Juma",
       "position": "maestro",
       "phone": "0987754621",
-      "email": "donjuma@gmail.com"
+      "homephone": "3516498"
     },
     {
-      "id": 4,
+      "id": "1702015618",
       "name": "Josue",
+      "lastName": "Vaca",
       "position": "oficial",
       "phone": "0987754621",
-      "email": "josue@gmail.com"
+      "homephone": "3516498"
     },
     {
-      "id": 5,
-      "name": "Miguelito",
+      "id": "1748464615",
+      "name": "Miguel",
+      "lastName": "Torres",
+      "nickname": "Miguelito",
       "position": "oficial",
       "phone": "0987754621",
-      "email": "miguelito@gmail.com"
+      "homephone": "3516498"
     }
   ],
   "providers": 
   [
     {
       "id": 1,
-      "name": "Propio",
+      "name": "Holbeein inc",
       "phone": "0987754621",
       "address": "San Francisco, CA 94513"
     },

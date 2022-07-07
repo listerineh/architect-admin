@@ -12,7 +12,7 @@ const Layout = ({theme, handleThemeSwitch}) => {
       {({ open }) => (
         <>
           <div className="md:flex md:min-h-screen md:max-h-screen">
-            <div className="md:w-1/4 bg-gray-900 px-5 sm:py-10 py-5">
+            <div className="md:w-1/5 bg-gray-900 px-5 sm:py-10 py-5">
               <div className="flow-root">
                 <div className="float-right block">
                   <button
@@ -34,7 +34,7 @@ const Layout = ({theme, handleThemeSwitch}) => {
                         alt="Web page Logo"
                         className="sm:w-12 w-10 sm:h-12 h-10"
                       />
-                      <h1 className="text-5xl pl-2 sm:block hidden">Inicio</h1>
+                      <h1 className="text-4xl pl-2 sm:block hidden">Inicio</h1>
                     </div>
                   </Link>
                 </div>
@@ -168,7 +168,7 @@ const Layout = ({theme, handleThemeSwitch}) => {
                 </Link>
               </nav>
             </div>
-            <div className="md:w-3/4 p-10 md:h-screen md:overflow-y-scroll dark:bg-black transition-all">
+            <div className="md:w-4/5 p-10 md:h-screen md:overflow-y-scroll dark:bg-black transition-all">
               <Outlet />
             </div>
           </div>
