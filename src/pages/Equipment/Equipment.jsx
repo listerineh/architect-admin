@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom'
-import Tool from "../components/Tool";
+import Tool from "../../components/Tool";
 
 const Equipment = () => {
   const [equipment, setEquipment] = useState([]);

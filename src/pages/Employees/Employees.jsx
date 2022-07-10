@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { UserAddIcon } from "@heroicons/react/outline";
-import Employee from "../components/Employee";
+import { UserAddIcon, SearchIcon } from "@heroicons/react/outline";
+import Employee from "../../components/Employee";
 
 const Employees = () => {
   const [employees, setEmployees] = useState([]);
@@ -64,6 +64,7 @@ const Employees = () => {
             <p className="block md:hidden bg-green-600 p-2 rounded-lg shadow text-white font-bold uppercase hover:bg-green-500 transition-all">Agregar nuevo</p>
           </button>
         </div>
+        
       </div>
 
       <div className="w-full">

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom'
-import Provider from "../components/Provider";
+import Provider from "../../components/Provider";
 
 const Providers = () => {
   const [providers, setProviders] = useState([]);
