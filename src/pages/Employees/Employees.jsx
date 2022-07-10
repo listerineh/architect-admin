@@ -75,9 +75,9 @@ const Employees = () => {
             className="md:p-4 p-3 w-full rounded-lg shadow md:text-base text-xs dark:text-white text-dark dark:bg-gray-900 bg-white transition-all"
             placeholder="Escriba el nombre del empleado:"
           />
-          <button className="absolute top-0 right-0 md:mt-4 mt-3 mr-4 dark:text-white text-dark">
+          <div className="absolute top-0 right-0 md:mt-4 mt-3 mr-4 dark:text-white text-dark">
             <SearchIcon className="md:h-5 h-4 md:w-5 w-4" />
-          </button>
+          </div>
         </div>
       </div>
 
