@@ -71,14 +71,14 @@ const Layout = ({ theme, handleThemeSwitch }) => {
                           <span className="uppercase font-bold text-xl">Registros</span>
                         </Disclosure.Button>
                         <Disclosure.Panel>
-                          <div className="px-2 pt-2 pb-3 space-y-0">
+                          <div className="pl-2 pt-2 pb-3 space-y-0">
                             <Link
                               to="/employees"
                               className={`${
                                 currentURL === "/employees"
-                                  ? "text-indigo-300 font-bold"
+                                  ? "bg-indigo-300 text-indigo-900 font-bold"
                                   : "text-white"
-                              }  block ml-5 hover:text-indigo-200`}
+                              }  pl-5 py-2 block ml-5 hover:text-indigo-200`}
                             >
                               Empleados
                             </Link>
@@ -86,9 +86,9 @@ const Layout = ({ theme, handleThemeSwitch }) => {
                               to="/providers"
                               className={`${
                                 currentURL === "/providers"
-                                  ? "text-indigo-300 font-bold"
+                                  ? "bg-indigo-300 text-indigo-900 font-bold"
                                   : "text-white"
-                              }  block ml-5 hover:text-indigo-200`}
+                              }  pl-5 py-2 block ml-5 hover:text-indigo-200`}
                             >
                               Proveedores
                             </Link>
@@ -96,9 +96,9 @@ const Layout = ({ theme, handleThemeSwitch }) => {
                               to="/equipment"
                               className={`${
                                 currentURL === "/equipment"
-                                  ? "text-indigo-300 font-bold"
+                                  ? "bg-indigo-300 text-indigo-900 font-bold"
                                   : "text-white"
-                              }  block ml-5 hover:text-indigo-200`}
+                              }  pl-5 py-2 block ml-5 hover:text-indigo-200`}
                             >
                               Equipos
                             </Link>
@@ -119,9 +119,9 @@ const Layout = ({ theme, handleThemeSwitch }) => {
                               to="/workflow"
                               className={`${
                                 currentURL === "/workflow"
-                                  ? "text-indigo-300 font-bold"
+                                  ? "bg-indigo-300 text-indigo-900 font-bold"
                                   : "text-white"
-                              }  block ml-5 hover:text-indigo-200`}
+                              }  pl-5 py-2 block ml-5 hover:text-indigo-200`}
                             >
                               Flujo de trabajo
                             </Link>
@@ -129,9 +129,9 @@ const Layout = ({ theme, handleThemeSwitch }) => {
                               to="/rentals"
                               className={`${
                                 currentURL === "/rentals"
-                                  ? "text-indigo-300 font-bold"
+                                  ? "bg-indigo-300 text-indigo-900 font-bold"
                                   : "text-white"
-                              }  block ml-5 hover:text-indigo-200`}
+                              }  pl-5 py-2 block ml-5 hover:text-indigo-200`}
                             >
                               Alquileres
                             </Link>
@@ -139,9 +139,9 @@ const Layout = ({ theme, handleThemeSwitch }) => {
                               to="/shopping"
                               className={`${
                                 currentURL === "/shopping"
-                                  ? "text-indigo-300 font-bold"
+                                  ? "bg-indigo-300 text-indigo-900 font-bold"
                                   : "text-white"
-                              }  block ml-5 hover:text-indigo-200`}
+                              }  pl-5 py-2 block ml-5 hover:text-indigo-200`}
                             >
                               Materiales
                             </Link>
