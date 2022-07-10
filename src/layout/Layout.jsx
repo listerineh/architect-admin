@@ -67,7 +67,7 @@ const Layout = ({ theme, handleThemeSwitch }) => {
                   <Disclosure>
                     {({ open }) => (
                       <>
-                        <Disclosure.Button className="flex w-full px-3 py-2 text-white hover:bg-indigo-300 rounded-sm text-base font-medium shadow">
+                        <Disclosure.Button className="rounded-lg flex w-full px-3 py-2 text-white hover:bg-indigo-300 text-base font-medium shadow">
                           <span className="uppercase font-bold text-xl">Registros</span>
                         </Disclosure.Button>
                         <Disclosure.Panel>
@@ -78,7 +78,7 @@ const Layout = ({ theme, handleThemeSwitch }) => {
                                 currentURL === "/employees"
                                   ? "bg-indigo-300 text-indigo-900 font-bold"
                                   : "text-white"
-                              }  pl-5 py-2 block ml-5 hover:text-indigo-200`}
+                              }  pl-5 py-2 block ml-5 hover:text-indigo-200 rounded-lg shadow`}
                             >
                               Empleados
                             </Link>
@@ -88,7 +88,7 @@ const Layout = ({ theme, handleThemeSwitch }) => {
                                 currentURL === "/providers"
                                   ? "bg-indigo-300 text-indigo-900 font-bold"
                                   : "text-white"
-                              }  pl-5 py-2 block ml-5 hover:text-indigo-200`}
+                              }  pl-5 py-2 block ml-5 hover:text-indigo-200 rounded-lg shadow`}
                             >
                               Proveedores
                             </Link>
@@ -98,7 +98,7 @@ const Layout = ({ theme, handleThemeSwitch }) => {
                                 currentURL === "/equipment"
                                   ? "bg-indigo-300 text-indigo-900 font-bold"
                                   : "text-white"
-                              }  pl-5 py-2 block ml-5 hover:text-indigo-200`}
+                              }  pl-5 py-2 block ml-5 hover:text-indigo-200 rounded-lg shadow`}
                             >
                               Equipos
                             </Link>
@@ -110,7 +110,7 @@ const Layout = ({ theme, handleThemeSwitch }) => {
                   <Disclosure>
                     {({ open }) => (
                       <>
-                        <Disclosure.Button className="flex w-full px-3 py-2 text-white hover:bg-indigo-300 rounded-sm text-base font-medium shadow">
+                        <Disclosure.Button className="flex w-full px-3 py-2 text-white hover:bg-indigo-300 rounded-lg text-base font-medium shadow">
                         <span className="uppercase font-bold text-xl">Servicios</span>
                         </Disclosure.Button>
                         <Disclosure.Panel className="">
@@ -121,7 +121,7 @@ const Layout = ({ theme, handleThemeSwitch }) => {
                                 currentURL === "/workflow"
                                   ? "bg-indigo-300 text-indigo-900 font-bold"
                                   : "text-white"
-                              }  pl-5 py-2 block ml-5 hover:text-indigo-200`}
+                              }  pl-5 py-2 block ml-5 hover:text-indigo-200 rounded-lg shadow`}
                             >
                               Flujo de trabajo
                             </Link>
@@ -131,7 +131,7 @@ const Layout = ({ theme, handleThemeSwitch }) => {
                                 currentURL === "/rentals"
                                   ? "bg-indigo-300 text-indigo-900 font-bold"
                                   : "text-white"
-                              }  pl-5 py-2 block ml-5 hover:text-indigo-200`}
+                              }  pl-5 py-2 block ml-5 hover:text-indigo-200 rounded-lg shadow`}
                             >
                               Alquileres
                             </Link>
@@ -141,7 +141,7 @@ const Layout = ({ theme, handleThemeSwitch }) => {
                                 currentURL === "/shopping"
                                   ? "bg-indigo-300 text-indigo-900 font-bold"
                                   : "text-white"
-                              }  pl-5 py-2 block ml-5 hover:text-indigo-200`}
+                              }  pl-5 py-2 block ml-5 hover:text-indigo-200 rounded-lg shadow`}
                             >
                               Materiales
                             </Link>
@@ -152,7 +152,7 @@ const Layout = ({ theme, handleThemeSwitch }) => {
                   </Disclosure>
                   <Link
                     to="/reports"
-                    className="uppercase font-bold text-xl flex w-full px-3 py-2 text-white hover:bg-indigo-300 rounded-sm shadow"
+                    className="uppercase font-bold text-xl flex w-full px-3 py-2 text-white hover:bg-indigo-300 rounded-lg shadow"
                   >
                     Reportes
                   </Link>
