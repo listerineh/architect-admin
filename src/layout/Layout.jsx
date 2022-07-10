@@ -3,9 +3,11 @@ import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon, MoonIcon, SunIcon } from "@heroicons/react/outline";
 import Logo from "../images/logo.webp";
 
-const Layout = ({theme, handleThemeSwitch}) => {
+const Layout = ({ theme, handleThemeSwitch }) => {
   const location = useLocation();
   const currentURL = location.pathname;
+
+  const openOptions = () => {};
 
   return (
     <Disclosure as="nav">
@@ -20,7 +22,17 @@ const Layout = ({theme, handleThemeSwitch}) => {
                     onClick={handleThemeSwitch}
                     className="p-2 md:mt-2 text-white text-lg hover:animate-pulse"
                   >
-                    {theme === 'light' ? <SunIcon className="block h-6 w-6 hover:text-yellow-300" aria-hidden="true" /> : <MoonIcon className="block h-6 w-6 hover:text-gray-400" aria-hidden="true" />}
+                    {theme === "light" ? (
+                      <SunIcon
+                        className="block h-6 w-6 hover:text-yellow-300"
+                        aria-hidden="true"
+                      />
+                    ) : (
+                      <MoonIcon
+                        className="block h-6 w-6 hover:text-gray-400"
+                        aria-hidden="true"
+                      />
+                    )}
                   </button>
                 </div>
                 <div className="sm:float-left float-right">
@@ -34,7 +46,9 @@ const Layout = ({theme, handleThemeSwitch}) => {
                         alt="Web page Logo"
                         className="sm:w-12 w-10 sm:h-12 h-10"
                       />
-                      <h1 className="text-3xl pl-2 mt-2 sm:block hidden uppercase">Inicio</h1>
+                      <h1 className="text-3xl pl-2 mt-2 sm:block hidden uppercase">
+                        Inicio
+                      </h1>
                     </div>
                   </Link>
                 </div>
@@ -49,34 +63,96 @@ const Layout = ({theme, handleThemeSwitch}) => {
                 </div>
               </div>
               <Disclosure.Panel className="sm:hidden">
-                <div className="px-2 pt-2 pb-3 space-y-0">
+                <div className="p-2 pt-2 pb-3 space-y-0">
+                  <Disclosure>
+                    {({ open }) => (
+                      <>
+                        <Disclosure.Button className="flex w-full px-3 py-2 text-white hover:bg-indigo-300 rounded-sm text-base font-medium shadow">
+                          <span className="uppercase font-bold text-xl">Registros</span>
+                        </Disclosure.Button>
+                        <Disclosure.Panel>
+                          <div className="px-2 pt-2 pb-3 space-y-0">
+                            <Link
+                              to="/employees"
+                              className={`${
+                                currentURL === "/employees"
+                                  ? "text-indigo-300 font-bold"
+                                  : "text-white"
+                              }  block ml-5 hover:text-indigo-200`}
+                            >
+                              Empleados
+                            </Link>
+                            <Link
+                              to="/providers"
+                              className={`${
+                                currentURL === "/providers"
+                                  ? "text-indigo-300 font-bold"
+                                  : "text-white"
+                              }  block ml-5 hover:text-indigo-200`}
+                            >
+                              Proveedores
+                            </Link>
+                            <Link
+                              to="/equipment"
+                              className={`${
+                                currentURL === "/equipment"
+                                  ? "text-indigo-300 font-bold"
+                                  : "text-white"
+                              }  block ml-5 hover:text-indigo-200`}
+                            >
+                              Equipos
+                            </Link>
+                          </div>
+                        </Disclosure.Panel>
+                      </>
+                    )}
+                  </Disclosure>
+                  <Disclosure>
+                    {({ open }) => (
+                      <>
+                        <Disclosure.Button className="flex w-full px-3 py-2 text-white hover:bg-indigo-300 rounded-sm text-base font-medium shadow">
+                        <span className="uppercase font-bold text-xl">Servicios</span>
+                        </Disclosure.Button>
+                        <Disclosure.Panel className="">
+                          <div className="px-2 pt-2 pb-3 space-y-0">
+                            <Link
+                              to="/workflow"
+                              className={`${
+                                currentURL === "/workflow"
+                                  ? "text-indigo-300 font-bold"
+                                  : "text-white"
+                              }  block ml-5 hover:text-indigo-200`}
+                            >
+                              Flujo de trabajo
+                            </Link>
+                            <Link
+                              to="/rentals"
+                              className={`${
+                                currentURL === "/rentals"
+                                  ? "text-indigo-300 font-bold"
+                                  : "text-white"
+                              }  block ml-5 hover:text-indigo-200`}
+                            >
+                              Alquileres
+                            </Link>
+                            <Link
+                              to="/shopping"
+                              className={`${
+                                currentURL === "/shopping"
+                                  ? "text-indigo-300 font-bold"
+                                  : "text-white"
+                              }  block ml-5 hover:text-indigo-200`}
+                            >
+                              Materiales
+                            </Link>
+                          </div>
+                        </Disclosure.Panel>
+                      </>
+                    )}
+                  </Disclosure>
                   <Link
-                    to="/"
-                    className={`${
-                      currentURL === "/"
-                        ? "bg-indigo-300 text-white"
-                        : "text-gray-300 hover:bg-zinc-500 hover:text-white"
-                    }  block px-3 py-2 rounded-sm text-base font-medium shadow`}
-                  >
-                    Registros
-                  </Link>
-                  <Link
-                    to="/portfolio"
-                    className={`${
-                      currentURL === "/portfolio"
-                        ? "bg-indigo-300 text-white"
-                        : "text-gray-300 hover:bg-zinc-500 hover:text-white"
-                    }  block px-3 py-2 rounded-sm text-base font-medium shadow`}
-                  >
-                    Servicios
-                  </Link>
-                  <Link
-                    to="/contacts"
-                    className={`${
-                      currentURL === "/contacts"
-                        ? "bg-indigo-300 text-white"
-                        : "text-gray-300 hover:bg-zinc-500 hover:text-white"
-                    }  block px-3 py-2 rounded-sm text-base font-medium shadow`}
+                    to="/reports"
+                    className="uppercase font-bold text-xl flex w-full px-3 py-2 text-white hover:bg-indigo-300 rounded-sm shadow"
                   >
                     Reportes
                   </Link>
