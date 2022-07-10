@@ -11,6 +11,10 @@ import EditProviderForm from './pages/EditProviderForm'
 import Equipment from './pages/Equipment'
 import NewEquipmentForm from './pages/NewEquipmentForm'
 import EditEquipmentForm from './pages/EditEquipmentForm'
+import Workflow from './pages/Workflow'
+import Rentals from './pages/Rentals'
+import Shopping from './pages/Shopping'
+import Reports from './pages/Reports'
 import Error404 from './pages/Error404'
 
 function App() {
@@ -53,6 +57,10 @@ function App() {
           <Route path='equipment' element={<Equipment />} />
           <Route path='equipment/new' element={<NewEquipmentForm />} />
           <Route path='equipment/edit/:id' element={<EditEquipmentForm />} />
+          <Route path='workflow' element={<Workflow />} />
+          <Route path='rentals' element={<Rentals />} />
+          <Route path='shopping' element={<Shopping />} />
+          <Route path='reports' element={<Reports />} />
         </Route>
         <Route path='*' element={<Error404 />}/>
       </Routes>
