@@ -18,9 +18,9 @@ const Layout = ({theme, handleThemeSwitch}) => {
                   <button
                     type="button"
                     onClick={handleThemeSwitch}
-                    className="p-2 md:mt-2 text-white text-lg"
+                    className="p-2 md:mt-2 text-white text-lg hover:animate-pulse"
                   >
-                    {theme === 'light' ? <SunIcon className="block h-6 w-6" aria-hidden="true" /> : <MoonIcon className="block h-6 w-6" aria-hidden="true" />}
+                    {theme === 'light' ? <SunIcon className="block h-6 w-6 hover:text-yellow-300" aria-hidden="true" /> : <MoonIcon className="block h-6 w-6 hover:text-gray-400" aria-hidden="true" />}
                   </button>
                 </div>
                 <div className="sm:float-left float-right">
@@ -34,7 +34,7 @@ const Layout = ({theme, handleThemeSwitch}) => {
                         alt="Web page Logo"
                         className="sm:w-12 w-10 sm:h-12 h-10"
                       />
-                      <h1 className="text-4xl pl-2 sm:block hidden">Inicio</h1>
+                      <h1 className="text-3xl pl-2 mt-2 sm:block hidden uppercase">Inicio</h1>
                     </div>
                   </Link>
                 </div>
