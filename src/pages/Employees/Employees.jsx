@@ -61,10 +61,24 @@ const Employees = () => {
             onClick={() => navigate("/employees/new")}
           >
             <UserAddIcon className="md:block hidden md:h-7 h-6 md:w-7 w-6 hover:text-green-500 hover:animate-pulse float-none" />
-            <p className="block md:hidden bg-green-600 p-2 rounded-lg shadow text-white font-bold uppercase hover:bg-green-500 transition-all">Agregar nuevo</p>
+            <p className="block md:hidden bg-green-600 p-2 rounded-lg shadow text-white font-bold uppercase hover:bg-green-500 transition-all">
+              Agregar nuevo
+            </p>
           </button>
         </div>
-        
+      </div>
+
+      <div className="container mx-auto mt-5">
+        <div className="relative my-2">
+          <input
+            type="search"
+            className="md:p-4 p-3 w-full rounded-lg shadow md:text-base text-xs dark:text-white text-dark dark:bg-gray-900 bg-white transition-all"
+            placeholder="Escriba el nombre del empleado:"
+          />
+          <button className="absolute top-0 right-0 md:mt-4 mt-3 mr-4 dark:text-white text-dark">
+            <SearchIcon className="md:h-5 h-4 md:w-5 w-4" />
+          </button>
+        </div>
       </div>
 
       <div className="w-full">
