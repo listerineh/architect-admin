@@ -1,7 +1,7 @@
 import { Outlet, Link, useLocation } from "react-router-dom";
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon, MoonIcon, SunIcon } from "@heroicons/react/outline";
-import Logo from "../images/arquitecto.webp";
+import Logo from "../images/logo.webp";
 
 const Layout = ({theme, handleThemeSwitch}) => {
   const location = useLocation();
