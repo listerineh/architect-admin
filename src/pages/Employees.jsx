@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
+import { UserAddIcon } from "@heroicons/react/outline";
 import Employee from "../components/Employee";
 
 const Employees = () => {
@@ -46,18 +47,21 @@ const Employees = () => {
     <>
       <div className="md:flow-root">
         <div className="md:float-left">
-          <h1 className="font-black text-4xl text-indigo-900 dark:text-indigo-400">Empleados</h1>
+          <h1 className="font-black text-4xl text-indigo-900 dark:text-indigo-400">
+            Empleados
+          </h1>
           <p className="mt-3 text-indigo-400 dark:text-indigo-800 font-semibold">
             Administra facilmente tus empleados!
           </p>
         </div>
-        <div className="mt-3 md:float-right">
-          <button 
+        <div className="mt-3 md:float-right dark:text-white text-black">
+          <button
             type="button"
-            className="bg-green-800 py-2 lg:px-10 px-2 md:w-auto w-full text-center text-sm rounded-lg shadow text-white font-bold uppercase hover:bg-green-900 transition-all"
-            onClick={() => navigate('/employees/new') }
+            className="w-full transition-all"
+            onClick={() => navigate("/employees/new")}
           >
-            Nuevo
+            <UserAddIcon className="md:block hidden md:h-7 h-6 md:w-7 w-6 hover:text-green-500 hover:animate-pulse float-none" />
+            <p className="block md:hidden bg-green-600 p-2 rounded-lg shadow text-white font-bold uppercase hover:bg-green-500 transition-all">Agregar nuevo</p>
           </button>
         </div>
       </div>

@@ -33,16 +33,25 @@ const Employee = ({ employee, handleDelete }) => {
           <div className="md:ml-9 ml-7 md:text-sm text-xs">
             <p className="uppercase text-indigo-600 italic mb-2">{position}</p>
             <div className="font-extralight italic">
-            <div className="flex">
-                <IdentificationIcon className="mr-2 block md:h-5 h-4 md:w-5 w-4" aria-hidden="true" />
+              <div className="flex">
+                <IdentificationIcon
+                  className="mr-2 block md:h-5 h-4 md:w-5 w-4"
+                  aria-hidden="true"
+                />
                 <p>{id}</p>
               </div>
               <div className="flex">
-                <PhoneIcon className="mr-2 block md:h-5 h-4 md:w-5 w-4" aria-hidden="true" />
+                <PhoneIcon
+                  className="mr-2 block md:h-5 h-4 md:w-5 w-4"
+                  aria-hidden="true"
+                />
                 <p>{phone}</p>
               </div>
               <div className="flex">
-                <HomeIcon className="mr-2 block md:h-5 h-4 md:w-5 w-4" aria-hidden="true" />
+                <HomeIcon
+                  className="mr-2 block md:h-5 h-4 md:w-5 w-4"
+                  aria-hidden="true"
+                />
                 <p>{homephone}</p>
               </div>
             </div>
