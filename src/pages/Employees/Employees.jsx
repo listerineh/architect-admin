@@ -47,11 +47,11 @@ const Employees = () => {
     <>
       <div className="md:flow-root">
         <div className="md:float-left">
-          <h1 className="font-black text-4xl text-indigo-900 dark:text-indigo-400">
+          <h1 className="font-black text-4xl text-indigo-900 dark:text-indigo-400 md:text-left text-center">
             Empleados
           </h1>
-          <p className="mt-3 text-indigo-400 dark:text-indigo-800 font-semibold">
-            Administra facilmente tus empleados!
+          <p className="mt-3 text-indigo-400 dark:text-indigo-800 font-semibold md:text-left text-center">
+            ¡Administra facilmente tus empleados!
           </p>
         </div>
         <div className="mt-3 md:float-right dark:text-white text-black">
