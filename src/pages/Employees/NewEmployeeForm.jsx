@@ -114,7 +114,10 @@ const NewEmployeeForm = () => {
               />
             </div>
             <div className="block md:p-5 p-2 w-full md:space-y-2 space-y-1">
-              <label htmlFor="homephone" className="mr-2 uppercase font-bold py-2">
+              <label
+                htmlFor="homephone"
+                className="mr-2 uppercase font-bold py-2"
+              >
                 Convencional<span className="text-red-500">*</span>
               </label>
               <input
